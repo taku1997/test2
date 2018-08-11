@@ -10,15 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBAction func `switch`(_ sender: UIButton) {
+        label1.text = "HELLO WOLRD"
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3)
+        {
+            self.label1.text = ""
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
 
 
 }
