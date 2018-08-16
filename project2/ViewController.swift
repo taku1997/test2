@@ -7,23 +7,30 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
-
     
     
-    @IBOutlet weak var label1: UILabel!
-    @IBAction func `switch`(_ sender: UIButton) {
-        label1.text = "HELLO WOLRD"
+    let table = UITableView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "新着記事" // Navigation Barのタイトルを設定
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3)
-        {
-            self.label1.text = ""
-        }
     }
     
     
-
-
+    
+            @IBAction func get(_ sender: Any) {
+            
+            Alamofire.request("https://www.googleapis.com/books/v1/volumes?q=intitle:%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3%E9%A3%AF&Country=JP").responseJSON {
+            
+            response in
+          
+            if let data = response.data,let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)")  // original server data as UTF8 String;;
+            }
+            }
+    }
 }
 
