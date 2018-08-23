@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E1075C36211DE4C200E451FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1075C35211DE4C200E451FB /* AppDelegate.swift */; };
-		E1075C38211DE4C200E451FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1075C37211DE4C200E451FB /* ViewController.swift */; };
 		E1075C3B211DE4C200E451FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1075C39211DE4C200E451FB /* Main.storyboard */; };
 		E1075C3D211DE4C200E451FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1075C3C211DE4C200E451FB /* Assets.xcassets */; };
 		E1075C40211DE4C200E451FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1075C3E211DE4C200E451FB /* LaunchScreen.storyboard */; };
 		E1075C4B211DE4C200E451FB /* project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1075C4A211DE4C200E451FB /* project2Tests.swift */; };
 		E1075C56211DE4C200E451FB /* project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1075C55211DE4C200E451FB /* project2UITests.swift */; };
 		E1075C652121899400E451FB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1075C642121899300E451FB /* Alamofire.framework */; };
+		E13D8C02212D1D61006A288F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13D8C01212D1D61006A288F /* SwiftyJSON.framework */; };
+		E13D8C06212D8845006A288F /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D8C05212D8845006A288F /* ArticleListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		E1075C32211DE4C200E451FB /* project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1075C35211DE4C200E451FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1075C37211DE4C200E451FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1075C3A211DE4C200E451FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1075C3C211DE4C200E451FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1075C3F211DE4C200E451FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		E1075C55211DE4C200E451FB /* project2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project2UITests.swift; sourceTree = "<group>"; };
 		E1075C57211DE4C200E451FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1075C642121899300E451FB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E13D8C01212D1D61006A288F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		E13D8C05212D8845006A288F /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13D8C02212D1D61006A288F /* SwiftyJSON.framework in Frameworks */,
 				E1075C652121899400E451FB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,8 +104,8 @@
 		E1075C34211DE4C200E451FB /* project2 */ = {
 			isa = PBXGroup;
 			children = (
+				E13D8C05212D8845006A288F /* ArticleListViewController.swift */,
 				E1075C35211DE4C200E451FB /* AppDelegate.swift */,
-				E1075C37211DE4C200E451FB /* ViewController.swift */,
 				E1075C39211DE4C200E451FB /* Main.storyboard */,
 				E1075C3C211DE4C200E451FB /* Assets.xcassets */,
 				E1075C3E211DE4C200E451FB /* LaunchScreen.storyboard */,
@@ -132,6 +135,7 @@
 		E1075C632121899300E451FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E13D8C01212D1D61006A288F /* SwiftyJSON.framework */,
 				E1075C642121899300E451FB /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -272,6 +276,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
@@ -286,8 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1075C38211DE4C200E451FB /* ViewController.swift in Sources */,
 				E1075C36211DE4C200E451FB /* AppDelegate.swift in Sources */,
+				E13D8C06212D8845006A288F /* ArticleListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
