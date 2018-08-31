@@ -14,6 +14,7 @@
 		E1075C4B211DE4C200E451FB /* project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1075C4A211DE4C200E451FB /* project2Tests.swift */; };
 		E1075C56211DE4C200E451FB /* project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1075C55211DE4C200E451FB /* project2UITests.swift */; };
 		E1075C652121899400E451FB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1075C642121899300E451FB /* Alamofire.framework */; };
+		E10D1A92213157EE005192AB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1A91213157EE005192AB /* CustomTableViewCell.swift */; };
 		E13D8C02212D1D61006A288F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13D8C01212D1D61006A288F /* SwiftyJSON.framework */; };
 		E13D8C06212D8845006A288F /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D8C05212D8845006A288F /* ArticleListViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		E1075C55211DE4C200E451FB /* project2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project2UITests.swift; sourceTree = "<group>"; };
 		E1075C57211DE4C200E451FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1075C642121899300E451FB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E10D1A91213157EE005192AB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E13D8C01212D1D61006A288F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		E13D8C05212D8845006A288F /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				E13D8C05212D8845006A288F /* ArticleListViewController.swift */,
 				E1075C35211DE4C200E451FB /* AppDelegate.swift */,
 				E1075C39211DE4C200E451FB /* Main.storyboard */,
+				E10D1A91213157EE005192AB /* CustomTableViewCell.swift */,
 				E1075C3C211DE4C200E451FB /* Assets.xcassets */,
 				E1075C3E211DE4C200E451FB /* LaunchScreen.storyboard */,
 				E1075C41211DE4C200E451FB /* Info.plist */,
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10D1A92213157EE005192AB /* CustomTableViewCell.swift in Sources */,
 				E1075C36211DE4C200E451FB /* AppDelegate.swift in Sources */,
 				E13D8C06212D8845006A288F /* ArticleListViewController.swift in Sources */,
 			);
